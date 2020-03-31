@@ -17,14 +17,13 @@ Urbansmart app provides quality of life data on urban areas. The API used gives 
 ## Component Hierarchy
 
 - App.js
-  - Header.js
-  - Main.js
-    - Intro.js
-    - Search.js
-    - CityData.js
-      - Graph.js
-      - Summary.js
-  - Footer.js
+  - Home.js
+    - Header.js
+    - Main.js
+    - Footer.js
+  - CityData.js
+    - SearchResults.js
+  
 
 
 
@@ -55,13 +54,12 @@ Documentation: [Teleport API Documentation](https://developers.teleport.org/api/
 
 ## Post-MVP 
 
-- implement React Bootstrap for styling
 - use Vis charts library to handle the graph part of the project
 
 
 ## SWOT Analysis
 
 - Strengths: good grasp of class and function components, props and states, API calls within React, Router, flexbox, Teleport API documentation is well-written
-- Weaknesses: Jest, conditional rendering, no experience with rendering charts or graphs, no experience with Bootstrap
-- Opportunities: refresh and practice testing with Jest, learn Bootstrap, learn Vis
+- Weaknesses: Jest, conditional rendering, no experience with rendering charts or graphs
+- Opportunities: refresh and practice testing with Jest, learn Vis
 - Threats: API not behaving as expected
