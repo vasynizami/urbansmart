@@ -15,9 +15,11 @@ function CityData() {
     try {
       const response = await axios.get(`https://api.teleport.org/api/urban_areas/slug:${city}/scores/`);
       updateCityData(response.data.categories)
+      setError(false)
     } catch (error) {
       setError(true)
       updateCityData([])
+
     }
   }
   
