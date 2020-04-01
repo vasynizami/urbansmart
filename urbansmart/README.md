@@ -1,68 +1,65 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# URBANSMART
 
-## Available Scripts
+![space gif](https://media.giphy.com/media/9tx0gy37p7oXu/giphy-downsized.gif)
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+Urbansmart app provides quality of life data on urban areas. The API used gives scores for housing, cost of living, startups, venture capital, travel connectivity, commute, business freedom, safety, healthcare, education, environmental quality, economy, taxation and internet access, as well as overall summary of quality of life. When a user imputs a city/town name in the search field, it's connected to the data about the urban area the city/town belongs to and displayed with a graph. 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Wireframes
 
-### `npm test`
+![design](https://i.imgur.com/HDn6edP.png)
+![prototype](https://i.imgur.com/lUgZurv.png)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Component Hierarchy
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- App.js
+  - Home.js
+    - Header.js
+    - Main.js
+    - Footer.js
+  - CityData.js
+    - SearchResults.js
+  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## API
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The API I'm using is Teleport API
+Documentation: [Teleport API Documentation](https://developers.teleport.org/api/)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## MVP
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- interactive React app built using create react app
+- have React Router installed via NPM
+- 7 rendered components
+- organized React file structure
+- use Axios to consume data from a third party API and render that data in the app
+- use React Hooks
+- only use React for DOM manipulation
+- display the data with a graph, where each column represents a particular quality of life category
+- styled with global style sheets
+- flexbox
+- responsive design on 3 screen sizes (desktop, mobile, and tablet) using 2 media queries
+- deployed via Surge
+- utilize Jest to create 15 tests
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## Post-MVP 
 
-### Analyzing the Bundle Size
+- use Vis charts library to handle the graph part of the project
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-### Making a Progressive Web App
+## SWOT Analysis
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- Strengths: good grasp of class and function components, props and states, API calls within React, Router, flexbox, Teleport API documentation is well-written
+- Weaknesses: Jest, conditional rendering, no experience with rendering charts or graphs
+- Opportunities: refresh and practice testing with Jest, learn Vis
+- Threats: API not behaving as expected

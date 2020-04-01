@@ -8,12 +8,19 @@ function CityData() {
   
   const [input, setInput] = useState("");
   const [cityData, updateCityData] = useState([]);
+  const [isError, setError] = useState(false);
 
   const handleSubmit = async () => {
     let city = input.replace(/\s+/g, '-').toLowerCase();
-    const response = await axios.get(`https://api.teleport.org/api/urban_areas/slug:${city}/scores/`);
-    updateCityData(response.data.categories);
+    try {
+      const response = await axios.get(`https://api.teleport.org/api/urban_areas/slug:${city}/scores/`);
+      updateCityData(response.data.categories)
+    } catch (error) {
+      setError(true)
+      updateCityData([])
+    }
   }
+  
 
   return (
     <div>
@@ -23,12 +30,12 @@ function CityData() {
       </Link>
       <Switch>
         <Route path="/citydata/:city">
-          <SearchResults cityData={cityData}/>
+          <SearchResults cityData={cityData} error={isError}/>
         </Route>
       </Switch>
     </div>
   )
-
+  
 }
 
 export default CityData
