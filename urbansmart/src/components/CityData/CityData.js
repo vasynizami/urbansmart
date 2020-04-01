@@ -6,7 +6,14 @@ import SearchResults from "../SearchResults/SearchResults"
 function CityData() {
   
   const [input, setInput] = useState("");
+  // const [city, setCity] = useState("");
   
+  //the search bar has to clear and the info should refresh every time button is clicked
+  // const handleSubmit = () => {
+  //   // console.log(input);
+  //   // setCity(input);
+    
+  // }
 
   return (
     <div>
