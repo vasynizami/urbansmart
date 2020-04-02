@@ -7,8 +7,10 @@ function SearchResults(props) {
     <div className="SearchResults">
       {props.error ? <p>Type in a valid city</p> :
         <>
-          <div className="summary">{new DOMParser().parseFromString(props.summary, "text/html")}</div>
-          {/* <div className="summary">{props.summary}</div> */}
+          {/* <div className="summary">{new DOMParser().parseFromString(
+            props.summary.map(summary => (<p>{summary}</p>))
+            , "text/html")}</div> */}
+          <div className="summary">{props.summary}</div>
         {
           props.cityData.map(category => (
             <div className="categories">
