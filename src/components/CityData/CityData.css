@@ -1,13 +1,14 @@
 .CityData {
   text-align: center;
   margin: 0 auto;
+  height: 80vh;
+  padding-top: 30px;
 }
 
 .form {
-  margin-top: 60px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 input {
@@ -33,3 +34,17 @@ button {
   padding: 2px;
   width: 80px;
 }
+
+@media only screen  
+  and (max-device-width: 375px) {
+    input {
+      width: 100px;
+      font-size: 14px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
+    button {
+      width: 60px;
+    }
+  }

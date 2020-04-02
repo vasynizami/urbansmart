@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import { Route, Switch, Link } from "react-router-dom";
 import SearchResults from "../SearchResults/SearchResults";
 import axios from 'axios';
-import './CityData.css'
+import './CityData.css';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 function CityData() {
   
@@ -27,19 +29,22 @@ function CityData() {
   
 
   return (
-    <div className="CityData">
-      <div className="form">
-        <input type="text" value={input} placeholder="type in a city" onChange={(e) => setInput(e.target.value)}></input>
-        <Link to={`/citydata/${input}`}>
-          <button onClick={handleSubmit}>submit</button>
-        </Link>
+    <>
+      <Header />
+      <div className="CityData">
+        <div className="form">
+          <input type="text" value={input} placeholder="urban area" onChange={(e) => setInput(e.target.value)}></input>
+          <Link to={`/citydata/${input}`}>
+            <button onClick={handleSubmit}>submit</button>
+          </Link>
+        </div>
+        <Switch>
+          <Route path="/citydata/:city">
+            <SearchResults cityData={cityData} error={isError} summary={summary}/>
+          </Route>
+        </Switch>
       </div>
-      <Switch>
-        <Route path="/citydata/:city">
-          <SearchResults cityData={cityData} error={isError} summary={summary}/>
-        </Route>
-      </Switch>
-    </div>
+    </>
   )
   
 }

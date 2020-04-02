@@ -1,5 +1,4 @@
 .SearchResults {
-  /* text-align: center; */
   margin: 30px 40px;
 }
 
@@ -35,3 +34,35 @@
   background-color: #212731;
   color: #C5D6DC;
 }
+
+@media only screen  
+  and (max-device-width: 770px) {
+    .progressbar10 {
+      width: 50vw;
+    }
+  }
+
+  @media only screen  
+  and (max-device-width: 375px) {
+
+    .SearchResults {
+      margin: 30px 20px;
+    }
+
+    .summary {
+      display: none;
+    }
+    
+    .categories {
+      margin-bottom: 15px;
+    }
+
+    .categories p {
+      font-size: 14px;
+    }
+
+    .progressbar {
+      font-size: 9px;
+      padding-top: 4px;
+    }
+  }

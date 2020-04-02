@@ -10,3 +10,10 @@
 .Footer p:nth-child(1) {
   padding-bottom: 4px;
 }
+
+@media only screen  
+  and (max-device-width: 375px) {
+    .Footer {
+      font-size: 12px;
+    }
+  }
