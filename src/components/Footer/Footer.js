@@ -7,7 +7,7 @@ class Footer extends Component {
     return (
       <div className="Footer">
        <p>&copy; Vasilya Nizamova</p>
-       <p>Photo by Kevin Young on Unsplash</p>
+       <p>Photo by Kevin Young on Unsplash | Powered by Teleport</p>
       </div>
     )
   }

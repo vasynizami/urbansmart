@@ -10,6 +10,6 @@ describe('Footer component', () => {
     component = shallow(<Footer />)
   })
   it('should render as expected', () => {
-    expect(component.contains(<p>Photo by Kevin Young on Unsplash</p>)).toBe(true)
+    expect(component.contains(<p>&copy; Vasilya Nizamova</p>)).toBe(true)
   })
 })

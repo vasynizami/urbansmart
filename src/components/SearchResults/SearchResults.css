@@ -36,14 +36,14 @@
 }
 
 @media only screen  
-  and (max-device-width: 770px) {
+  and (max-device-width: 800px) {
     .progressbar10 {
       width: 50vw;
     }
   }
 
   @media only screen  
-  and (max-device-width: 375px) {
+  and (max-device-width: 500px) {
 
     .SearchResults {
       margin: 30px 20px;

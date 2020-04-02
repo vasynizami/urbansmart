@@ -2,15 +2,12 @@ import React from 'react';
 import './SearchResults.css'
 
 function SearchResults(props) {
-
+//summary returns with html tags from API, so we have to use dangerouslySetInnerHTML
   return (
     <div className="SearchResults">
       {props.error ? <p>Type in a valid city</p> :
         <>
-          {/* <div className="summary">{new DOMParser().parseFromString(
-            props.summary.map(summary => (<p>{summary}</p>))
-            , "text/html")}</div> */}
-          <div className="summary">{props.summary}</div>
+          <div className="summary" dangerouslySetInnerHTML={{__html: `${props.summary}`}}></div>
         {
           props.cityData.map(category => (
             <div className="categories">

@@ -14,4 +14,4 @@ describe('Header component', () => {
     expect(component.contains(<p>city stats</p>)).toBe(true)
   })
 
-})
+})  

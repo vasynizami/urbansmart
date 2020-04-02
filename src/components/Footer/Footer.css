@@ -12,7 +12,7 @@
 }
 
 @media only screen  
-  and (max-device-width: 375px) {
+  and (max-device-width: 500px) {
     .Footer {
       font-size: 12px;
     }
