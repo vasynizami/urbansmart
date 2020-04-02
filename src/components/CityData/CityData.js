@@ -4,7 +4,6 @@ import SearchResults from "../SearchResults/SearchResults";
 import axios from 'axios';
 import './CityData.css';
 import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
 
 function CityData() {
   
