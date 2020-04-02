@@ -2,5 +2,11 @@
   height: 10vh;
   text-align: center;
   margin: 0 auto;
-  color: white;
+  color: #F5F1F0;
+  background-color: rgba(33,39,49,0.5);
+  padding: 16px 80px;
+}
+
+.Footer p:nth-child(1) {
+  padding-bottom: 4px;
 }

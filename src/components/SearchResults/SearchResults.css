@@ -1,0 +1,37 @@
+.SearchResults {
+  /* text-align: center; */
+  margin: 30px 40px;
+}
+
+.summary {
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.bar {
+  position: relative;
+}
+
+.progressbar10 {
+  border-radius: 2px;
+  width: 70vw;
+  background-color: #C5D6DC;
+  height: 20px;
+}
+
+.progressbar {
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  background-color: #212731;
+  color: #C5D6DC;
+}

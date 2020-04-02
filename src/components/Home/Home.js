@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import Background from "../../img/bground.jpg";
+import Background from "../../img/bground.jpeg";
 import Header from '../Header/Header';
 import Main from '../Main/Main';
 import Footer from '../Footer/Footer';
