@@ -4,12 +4,21 @@ import Footer from './Footer'
 
 describe('Footer component', () => {
   
-  let component
-  //every time each test runs, this gonna run first; it gonna reset the component
+  let component;
+
   beforeEach(() => {
     component = shallow(<Footer />)
-  })
-  it('should render as expected', () => {
+  });
+
+  it('renders', () => {
+    expect(component).not.toBeNull();
+  });
+
+  it('has copyright p', () => {
     expect(component.contains(<p>&copy; Vasilya Nizamova</p>)).toBe(true)
-  })
+  });
+
+  it('has p with credits', () => {
+    expect(component.contains(<p>Photo by Kevin Young on Unsplash | Powered by Teleport</p>)).toBe(true)
+  });
 })

@@ -38,6 +38,7 @@
     ]
   },
   "devDependencies": {
+    "@storybook/react": "^5.3.18",
     "@testing-library/react-hooks": "^3.2.1"
   }
 }
