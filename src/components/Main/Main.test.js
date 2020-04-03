@@ -1,8 +1,9 @@
-import React from 'react'
-import { shallow } from 'enzyme'
-import Main from './Main'
+import React from 'react';
+import { shallow } from 'enzyme';
+import Main from './Main';
 
 describe('Main component', () => {
+
   let component;
   
   beforeEach(() => {
@@ -20,4 +21,5 @@ describe('Main component', () => {
   it('has subhead', () => {
     expect(component.contains(<p>quality of life data on any city</p>)).toBe(true)
   });
+  
 })

@@ -1,6 +1,6 @@
-import React from 'react'
-import { shallow } from 'enzyme'
-import Footer from './Footer'
+import React from 'react';
+import { shallow } from 'enzyme';
+import Footer from './Footer';
 
 describe('Footer component', () => {
   
@@ -21,4 +21,5 @@ describe('Footer component', () => {
   it('has p with credits', () => {
     expect(component.contains(<p>Photo by Kevin Young on Unsplash | Powered by Teleport</p>)).toBe(true)
   });
+  
 })

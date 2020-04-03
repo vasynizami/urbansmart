@@ -1,7 +1,8 @@
-import React, { PureComponent } from 'react'
+import React, { Component } from 'react';
 import { Link } from "react-router-dom";
-import './Header.css'
-class Header extends PureComponent {
+import './Header.css';
+
+class Header extends Component {
 
   render() {
     return (
@@ -14,7 +15,7 @@ class Header extends PureComponent {
         </Link>
       </div>
     )
-  }
+  };
 }
 
 export default Header

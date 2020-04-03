@@ -24,7 +24,7 @@ function CityData() {
       updateCityData([])
       updateSummary("")
     }
-  }
+  };
   
 
   return (
@@ -34,7 +34,7 @@ function CityData() {
         <div className="form">
           <input type="text" value={input} placeholder="urban area" onChange={(e) => setInput(e.target.value)}></input>
           <Link to={`/citydata/${input}`}>
-            <button onClick={handleSubmit}>submit</button>
+            <button onClick={handleSubmit}>search</button>
           </Link>
         </div>
         <Switch>
@@ -46,7 +46,7 @@ function CityData() {
     </>
   )
   
-}
+};
 
 export default CityData
 

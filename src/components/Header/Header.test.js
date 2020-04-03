@@ -1,6 +1,6 @@
-import React from 'react'
-import { shallow } from 'enzyme'
-import Header from './Header'
+import React from 'react';
+import { shallow } from 'enzyme';
+import Header from './Header';
 
 describe('Header component', () => {
   
@@ -21,5 +21,5 @@ describe('Header component', () => {
   it('renders as expected', () => {
     expect(component).not.toBeNull();
   });
-  
+
 })  

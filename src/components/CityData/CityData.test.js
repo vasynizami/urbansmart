@@ -1,5 +1,5 @@
-import React from 'react'
-import { shallow } from 'enzyme'
+import React from 'react';
+import { shallow } from 'enzyme';
 import CityData from './CityData';
 import Header from '../Header/Header';
 
@@ -20,7 +20,7 @@ describe('CityData component', () => {
   });
 
   it('there is a button', () => {
-    const button = <button>submit</button>
+    const button = <button>search</button>
     expect(component.containsMatchingElement(button)).toBe(true);
   });
   

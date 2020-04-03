@@ -5,16 +5,10 @@
   padding-top: 30px;
 }
 
-.form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 input {
   border: none;
   border-radius: 2px;
-  background-color: rgba(141,172,180, 0.5);
+  background-color: rgba(193,111,87, 0.3);
   box-shadow: none;
   width: 180px;
   height: 20px;
@@ -22,17 +16,27 @@ input {
   padding: 20px;
   color: #212731;
   margin-right: 20px;
-  font-size: 24px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+input:focus {
+  outline: none;
 }
 
 button {
   border: none;
   border-radius: 2px;
-  background-color: #212731;
-  color: #8DACB4;
+  background-color: rgba(33,39,49, 0.5);
+  color: #C5D6DC;
   text-align: center;
-  padding: 2px;
-  width: 80px;
+  padding: 2px 2px 3px 2px;
+  width: 60px;
+  font-size: 10px;
+}
+
+button:focus {
+  outline: none;
 }
 
 @media only screen  

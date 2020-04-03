@@ -10,7 +10,7 @@ class Footer extends Component {
        <p>Photo by Kevin Young on Unsplash | Powered by Teleport</p>
       </div>
     )
-  }
+  };
 }
 
 export default Footer

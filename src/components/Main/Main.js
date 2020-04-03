@@ -10,7 +10,7 @@ class Main extends Component {
           <p>quality of life data on any city</p>
       </div>
     )
-  }
+  };
 }
 
 export default Main

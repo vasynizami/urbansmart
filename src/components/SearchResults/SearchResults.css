@@ -21,7 +21,7 @@
 .progressbar10 {
   border-radius: 2px;
   width: 70vw;
-  background-color: #C5D6DC;
+  background-color:rgba(193,111,87, 0.1);
   height: 20px;
 }
 
@@ -31,7 +31,7 @@
   top: 0;
   left: 0;
   height: 20px;
-  background-color: #212731;
+  background-color: #C6383D;
   color: #C5D6DC;
 }
 
