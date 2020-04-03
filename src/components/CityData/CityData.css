@@ -10,7 +10,7 @@ input {
   border-radius: 2px;
   background-color: rgba(193,111,87, 0.3);
   box-shadow: none;
-  width: 180px;
+  width: 160px;
   height: 20px;
   text-align: center;
   padding: 20px;
@@ -28,7 +28,7 @@ button {
   border: none;
   border-radius: 2px;
   background-color: rgba(33,39,49, 0.5);
-  color: #C5D6DC;
+  color: #212731;
   text-align: center;
   padding: 2px 2px 3px 2px;
   width: 60px;

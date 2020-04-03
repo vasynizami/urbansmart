@@ -22,7 +22,7 @@
   border-radius: 2px;
   width: 70vw;
   background-color:rgba(193,111,87, 0.1);
-  height: 20px;
+  height: 16px;
 }
 
 .progressbar {
@@ -30,9 +30,10 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 20px;
-  background-color: #C6383D;
-  color: #C5D6DC;
+  height: 16px;
+  background-color: #93A1A4;
+  color: #212731;
+  font-size: 12px;
 }
 
 @media only screen  
